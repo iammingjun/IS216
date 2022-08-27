@@ -22,21 +22,59 @@ body {
 }
 
 #navigation-bar{
-    padding: 2px;
+    padding: 10px;
     background-color: gray;
 }
 
 .box ul{
-    list-style-type: none;
-  margin: 0;
+  list-style-type: none;
+  margin-left: 10px;
   padding: 0;
 }
 
 .box li {
-    border-bottom: 1px solid #555;
     display: inline;
  }
 
+ .box a{
+    color: white;
+    padding-right: 20px;
+    text-decoration: none;
+
+ }
+
+ #top-content{
+    background-color: rgb(196, 157, 116);
+    background-image: url('../images/hyunbin_bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 20px;
+    min-height: 400px;
+ }
+
+ .box #main-content{
+    width:70%;
+    float: left;
+    line-height: 30px;
+ }
+
+aside{
+    float: right;
+    width: 30%;
+    background-color: rgb(58, 157, 0);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-footer{
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    background-color:gray;
+}
 
 
 
