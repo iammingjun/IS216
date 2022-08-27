@@ -2,10 +2,25 @@
    You can ADD more CSS script below the 2 lines.
 */
 body {
+    background-color: rgb(251, 232, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
     margin: 0;
     padding: 0;
-    /* You can add more CSS script below */
 }
+
+.box {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#main-header{
+    background-color: yellow;
+    color: blue;
+}
+
 
 
 
