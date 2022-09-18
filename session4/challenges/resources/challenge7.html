@@ -20,13 +20,14 @@
 
         // Given this template table_data String
         var table_data = " \
-            <table border='1' style='text-align: center'> \
+            <table border='1' style='text-align: center'> \ <thead> \
                 <tr> \
                     <th>Name</th> \
                     <th>Gender</th> \
                     <th>Job</th> \
                     <th>Annual Salary (USD)</th> \
                 </tr> \
+                <thead> \
         ";
 
         // Loop through friends Array and populate table_data
@@ -35,6 +36,14 @@
         // HINT: You need to APPEND additional HTML to table_data
         
         // WRITE YOUR CODE HERE
+
+        for(let i = 0; i < friends.length; i++){
+            table_data += "<tr>";
+            for(let j = 0; j < friends[i].length; j++){
+                table_data += "<td>" + friends[i][j] + "</td>";
+            }
+            table_data += "</tr>";
+        }
 
 
 
