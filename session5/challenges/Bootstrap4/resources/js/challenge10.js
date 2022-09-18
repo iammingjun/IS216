@@ -44,6 +44,9 @@ const stars_dataset = [
 // Randomly determine whether to show "male" stars or "female" stars
 function display_default() {
 
+    var img = document.getElementsByClassName('carousel-inner');
+    console.log(carousel)
+
     // YOUR CODE GOES HERE
 
     // Look for "[IMPORTANT]" inside challenge10.html file.
