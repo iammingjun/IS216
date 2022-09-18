@@ -30,6 +30,22 @@
 
         // WRITE YOUR CODE HERE
 
+        let number = prompt("Please enter a number between 1 and 10");
+
+        if(number < 1 || number > 10 || isNaN(number)){
+            alert("Hello Hello Invalid Input!");
+        }else{
+            let lucky_number = Math.floor(Math.random() * 10) + 1;
+            if(number ==lucky_number){
+                alert("Lucky number is " + lucky_number + "! Have a nice day!");
+            }else{
+                alert("Lucky number is " + lucky_number + "! Ouch... try again next time!");
+            }
+        }
+        
+       
+       
+
     </script>
 
 </head>
