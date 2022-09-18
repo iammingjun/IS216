@@ -20,7 +20,12 @@
         function convert_first_letter(str) {
             
             // YOUR CODE GOES HERE
-            
+            str = str.split(" ");
+            for(i =0 ; i < str.length; i++){
+                str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+            }
+            return str.join(" ");
+           
         }
 
         
@@ -30,7 +35,7 @@
         output_sentence = convert_first_letter(input_sentence);
         console.log( output_sentence ); // Debug message to Console
         // To see the output, go open Chrome --> Developer Tools --> Console
-        //alert(output_sentence);
+        alert(output_sentence);
         // Do NOT modify the above code
 
     </script>
