@@ -61,6 +61,30 @@
 
         // Once table_data is completed
         // It will be used by JavaScript code below (inside body)
+        for(friend of friends){
+            var tmp_str = "<tr>";
+            for( counter = 0; counter < friend.length; counter++ ){
+                if(counter == 0 || counter == 2){
+                    tmp_str += "<td>" + friend[counter] + "</td>";
+                }
+                else if(counter == 1){
+                    if(friend[counter] == 'Female'){
+                      tmp_str += "<td class = 'female'>" + friend[counter] + "</td>";
+                    }else{
+                        tmp_str += "<td class ='male'>" + friend[counter] + "</td>";
+                    }
+                }else{
+                    if(friend[counter] > 50000){
+                        tmp_str += "<td class ='rich'>" + friend[counter] + "</td>";
+                    }else{
+                        tmp_str += "<td>" + friend[counter] + "</td>";
+                    }
+                }
+            }
+            tmp_str = tmp_str + "</tr>";
+            table_data += tmp_str;
+        }
+
 
     </script>
 
